@@ -1,0 +1,23 @@
+{
+  "name": "portifolio_jf",
+  "version": "1.0.0",
+  "description": "Site qui résume mes compétences professionnelles, cv et bio inclus.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffduval/portfolio.git"
+  },
+  "keywords": [],
+  "author": "Jean-Francois Duval",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeffduval/portfolio/issues"
+  },
+  "homepage": "https://github.com/jeffduval/portfolio#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}

@@ -5,11 +5,14 @@ namespace App;
 
 use App\Controleurs\ControleurSite;
 use \PDO;
-//use eftec\bladeone\BladeOne;
+use eftec\bladeone\BladeOne;
 
 class App
 {
     private static ?PDO $refPdo = null;
+    private static ?BladeOne $refBlade = null;
+
+    private $monControleur = null;
 
     public function __construct()
     {

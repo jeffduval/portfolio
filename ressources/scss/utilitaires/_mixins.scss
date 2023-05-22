@@ -1,18 +1,26 @@
-/**
-* @author Ève Février - efevrier@cegep-ste-foy.qc.ca
-* @author Yves Hélie - yves.helie@cegep-ste-foy.qc.ca
-*/
+/****** Boutons ******/
 
-/**
- * ----------------------------
- * TABLE DES MATIERES - MIXINS
- * ----------------------------
- * Utilitaires de base
- ** Box sizing
- ** Clearfix
- * Accessibilité
- * Typographie
- */
+@mixin boutonEnvoyer {
+    width: 120px;
+    height: 40px;
+    border-radius:5px;
+    background: linear-gradient(35deg,  #FF7209,#FF3004, #FF7209, #FF3004);
+    color: $blanc;
+    border: none;
+    &:hover {
+        scale: 1.01;
+
+    }
+    &:focus,
+    &:focus-visible{
+        border: $orange solid 2px;
+        border-color: $orange !important;
+        color: white;
+        width: 150px;
+        height: 57px;
+    }
+}
+
 
 /********** Utilitaires de base **********/
 
@@ -72,13 +80,6 @@
 
 // Fonction pour convertir une valeur de font-size en pixels à son équivalent rem
 @function calculateRem($size) {
-    $remSize: calc($size / 10px);
+    $remSize: calc($size / 10);
     @return #{$remSize}rem;
 }
-
-// Mixin qui inclus la solution de repli en pixel suivi par la valeur calculée en rem
-@mixin fontSize($size) {
-    font-size: $size;
-    font-size: calculateRem($size);
-}
-//Pour utiliser la fonction : @include fontSize(15px);

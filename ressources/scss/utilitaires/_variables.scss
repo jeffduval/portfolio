@@ -1,37 +1,16 @@
 /**
-* @author Prenom Nom courriel
-* @todo Importer la fonte Futura
-* @todo Personnaliser les variables selon les spécifications du guide visuel
-*       Certaines variables devront être définies par une fonction de coloration
-* @todo Compléter selon l'énoncé de l'exercice
-* @todo Utiliser le sélecteur & pour les sélecteurs des différentes couleurs
-*/
-
-/** Polices de caractères **/
-
-@font-face {
-  font-family: Futura, sans-serif;
-  src: 	url('../fonts/Futura.ttc') format('truetype');
-}
-
-$fontePrimaire : Futura, sans-serif;
-$fonteSecondaire : Arial, sans-serif;
+* @author J-F Duval
 
 /** Palette de couleurs **/
-// Utiliser http://chir.ag/projects/name-that-color pour obtenir des noms uniques et mémorisables
-// Permettez-vous d'utiliser un nom de variable plus explicite si la suggestion de name-that-color est trop étrange
 
-/* Couleurs de base */
-$bleuMoyen: #358ae0;
-$bleuPale: #68a8e8;
-$vertLime: #bbd531;
-$bleuMinuit: #012d61;
-$bleuMarin: #2678B5;
+$hyperlien: #0075E1;
+$bleuEntete: #0075E1;
+$orange: #FF570A;
+$bleuTypo: #120D31;
+$blanc: #ffffff;
+$bleuH2: #002D92;
+$bleuBande: #03045e;
 
-$bleuMoyenTransparent : transparentize($bleuMoyen, 0.50);
-
-/* Autres couleurs */
-$hyperlien: $bleuMarin;
-
-/** Points de rupture **/
-$desktop : 601px;
+body .bleuLien{
+  color: #0075E1;
+}

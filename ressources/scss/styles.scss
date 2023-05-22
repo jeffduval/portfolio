@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+// sass --watch ressources/scss:liaisons/css
 /**
  * @author Prenom Nom courriel
  * @todo Lier les modules avec des instructions @import
@@ -32,26 +32,24 @@
 /****** Librairies ******/
 
 /** Normalize **/
-@import ''; // Adapter le lien vers votre fichier normalize dans node_module.
+@import '../node_modules/normalize.css'; // Adapter le lien vers votre fichier normalize dans node_module.
 
 /**** UTILITAIRES ****/
 
 /** Variables **/
-@import 'utilitaires/variables';
+//@import 'utilitaires/variables';
 
 /** Mixins **/
-@import 'utilitaires/mixins';
+//@import 'utilitaires/mixins';
 
 /****** BASE ******/
 
 /** Typographie **/
 @import 'base/typo';
-
-/** Hyperliens **/
-@import 'base/hyperlien';
-
-/** Boutons **/
-@import 'base/bouton';
-
+/** variables **/
+@import 'utilitaires/variables';
+/** Mixins **/
+@import 'utilitaires/mixins';
 /****** MODULES ******/
+@import 'modules/accueil';
 

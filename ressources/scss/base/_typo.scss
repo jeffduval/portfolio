@@ -1,84 +1,128 @@
 /**
-* @author Prenom Nom courriel
-* @todo Préciser l’interlignage sur le body pour l’écran large
-* @todo Utiliser le mixin fontSize pour définir les tailles de polices
-* @todo Utiliser une variable pour la media query de la règle body
-*/
+* @author J-F Duval
 
 /**** Typographie responsive ****/
+/** Polices de caractères **/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+$fontePrincipale: 'Noto Sans', sans-serif;
+$fonteAction: 'Quicksand, sans-serif';
+
 
 html {
   font-size: 62.5%;
 }
 
-body {
-  font-family: $fonteSecondaire;
-  font-size: 16px; /* 16px pour toutes les largeurs d'écran */
-  font-size: 1.6rem;
-  line-height: 1.375; /* facteur multiplicateur de la taille de la police 1.375x16=22 */
-  @media (min-width: 601px) {
+h1,
+.h1 {
+  font-family: $fontePrincipale;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+
+  @media(min-width: 601px) {
+    font-size: 40px;
   }
 }
 
-h1,
-.titreNiveau1,
 h2,
-.titreNiveau2,
-h3,
-.titreNiveau3 {
-  font-family: $fontePrimaire;
-  font-weight: 500;
+.h2 {
+  font-family: $fontePrincipale;
+  font-size: 20px;
+  font-weight: 600;
+  //color:$bleuH2;
+  //  text-transform: uppercase;
+  @media(min-width: 601px) {
+    font-size: 22px;
+  }
 }
 
-h1,
-.titreNiveau1 {
-  @include fontSize(28px);
-  margin: 0;
-  &--desktop {
-    font-size: 48px;
-    font-size: 4.8rem;
-    padding-bottom: 15px;
-    position: relative;
-    &:after {
-      background-color: $bleuMoyen;
-      content: "";
-      display: inline-block;
-      width: 150px;
-      height: 8px;
-      position: absolute;
-      left: 0;
-      bottom: 0;
+h3,
+.h3 {
+  font-family: $fontePrincipale;
+  font-size: 20px;
+  font-weight: 400;
+
+  @media(min-width: 601px) {
+    font-size: 20px;
+  }
+}
+body .typoLien{
+  font-size: 16px;
+  font-family: $fontePrincipale;
+  font-weight: 700;
+  //color: $orange;
+  &:hover{
+    transform: scale(1.05);
+  }
+}
+
+.navTypo {
+  font-family: $fontePrincipale;
+  font-size: 18px;
+  line-height: 35px;
+  font-weight: 700;
+}
+@media(min-width: 601px) {
+  .navTypo {
+    font-family: $fontePrincipale;
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 700;
+  }
+}
+@media(min-width: 854px) {
+  .navTypo {
+    font-family: $fontePrincipale;
+    font-size: 24px;
+    line-height: 35px;
+    font-weight: 700;
+  }
+}
+.button {
+  font-family: $fontePrincipale;
+  font-size: 18px;
+  font-weight: 500;
+
+  @media(min-width: 601px) {
+    font-size: 18px;
+  }
+}
+label,
+.li,
+p {
+  font-family: $fontePrincipale;
+  color: #2F2E32;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.375;
+
+  @media(min-width: 601px) {
+    line-height: 1.5;
+  }
+
+  body div a {
+    font-family: $fontePrincipale;
+    font-size: 16px;
+    //color: $orange;
+    line-height: 1.375;
+    font-weight: 700;
+    text-decoration: none;
+    a:visited{
+      text-decoration: none!important;
+    }
+    &:focus{
+      outline: none;
+     // border: 2px solid $orange;
+      outline-offset: -5px;
+      //color: $orange;
+      border-radius: 5px;
+    }
+
+    @media(min-width: 601px) {
+      line-height: 1.5;
     }
   }
 }
 
-h2,
-.titreNiveau2{
-  font-size: 20px;
-  font-size: 2rem;
-  text-transform: uppercase;
-  &--desktop {
-    font-size: 28px;
-    font-size: 2.8rem;
-  }
-}
-
-h3,
-.titreNiveau3 {
-  font-size: 18px;
-  font-size: 1.8rem;
-  &--desktop {
-    font-size: 22px;
-    font-size: 2.2rem;
-  }
-}
-
-.texte {
-  font-family: $fonteSecondaire;
-  font-size: 16px;
-  font-size: 1.6rem;
-  line-height: 1.375;
-  &--desktop {
-    line-height: 1.5;
-  }
-}

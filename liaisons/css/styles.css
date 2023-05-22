@@ -1,0 +1,215 @@
+@charset "UTF-8";
+/**
+ * @author Prenom Nom courriel
+ * @todo Lier les modules avec des instructions @import
+ * @todo Compléter selon l'énoncé de l'exercice
+ */
+/*
+ * ------------------
+ * TABLE DES MATIERES
+ * ------------------
+ * Librairies
+ ** Normalize
+ * UTILITAIRES
+ ** Variables
+ ** Mixins
+ * BASE
+ ** Typographie
+ ** Hyperliens
+ ** Boutons
+ * MODULES
+ ** gds - Styles généraux du Guide de styles
+ ** palette - Palette de couleurs
+ ** listeInteractivite - Éléments interactifs
+ */
+/****** Librairies ******/
+/** Normalize **/
+@import '../node_modules/normalize.css';
+/**** UTILITAIRES ****/
+/** Variables **/
+/** Mixins **/
+/****** BASE ******/
+/** Typographie **/
+/**
+* @author J-F Duval
+
+/**** Typographie responsive ****/
+/** Polices de caractères **/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+h1,
+.h1 {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+@media (min-width: 601px) {
+  h1,
+.h1 {
+    font-size: 40px;
+  }
+}
+
+h2,
+.h2 {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+@media (min-width: 601px) {
+  h2,
+.h2 {
+    font-size: 22px;
+  }
+}
+
+h3,
+.h3 {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+@media (min-width: 601px) {
+  h3,
+.h3 {
+    font-size: 20px;
+  }
+}
+
+body .typoLien {
+  font-size: 16px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+}
+body .typoLien:hover {
+  transform: scale(1.05);
+}
+
+.navTypo {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 18px;
+  line-height: 35px;
+  font-weight: 700;
+}
+
+@media (min-width: 601px) {
+  .navTypo {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 700;
+  }
+}
+@media (min-width: 854px) {
+  .navTypo {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 24px;
+    line-height: 35px;
+    font-weight: 700;
+  }
+}
+.button {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+@media (min-width: 601px) {
+  .button {
+    font-size: 18px;
+  }
+}
+
+label,
+.li,
+p {
+  font-family: "Noto Sans", sans-serif;
+  color: #2F2E32;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.375;
+}
+@media (min-width: 601px) {
+  label,
+.li,
+p {
+    line-height: 1.5;
+  }
+}
+label body div a,
+.li body div a,
+p body div a {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.375;
+  font-weight: 700;
+  text-decoration: none;
+}
+label body div a a:visited,
+.li body div a a:visited,
+p body div a a:visited {
+  text-decoration: none !important;
+}
+label body div a:focus,
+.li body div a:focus,
+p body div a:focus {
+  outline: none;
+  outline-offset: -5px;
+  border-radius: 5px;
+}
+@media (min-width: 601px) {
+  label body div a,
+.li body div a,
+p body div a {
+    line-height: 1.5;
+  }
+}
+
+/** variables **/
+/**
+* @author J-F Duval
+
+/** Palette de couleurs **/
+body .bleuLien {
+  color: #0075E1;
+}
+
+/** Mixins **/
+/****** Boutons ******/
+/********** Utilitaires de base **********/
+/** Box sizing **/
+/* Clearfix */
+/********* Accessibilité *********/
+.visuallyhidden,
+.screen-reader-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus,
+.screen-reader-only.focusable:active,
+.screen-reader-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/******** Typographie *********/
+/****** MODULES ******/
+h2 {
+  color: red;
+}
+
+/*# sourceMappingURL=styles.css.map */
