@@ -1,0 +1,22 @@
+@media(max-width: 600px) {
+  .nav {
+    color: white;
+    text-align: right;
+    letter-spacing: 5px;
+    margin-top: -10rem;
+
+    &__list {
+      margin-right: 15%;
+
+      &--item {
+        list-style-type: none;
+        padding: 5px 0;
+      }
+    }
+  }
+}
+
+.bgNav {
+  background-color: $rouge;
+  width: 100%;
+}

@@ -1,0 +1,11 @@
+body{
+  background-color: $bleuBackground;
+}
+@media(max-width: 600px){
+  .logo{
+    width: 250px;
+    display: block;
+    margin:0 auto;
+    margin-top: 15px;
+  }
+}

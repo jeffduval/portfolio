@@ -11,6 +11,9 @@
     <meta name="author" content="Jean-François Duval">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../liaisons/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 {{--    <script defer src="../js/_menu.js"></script>--}}
 {{--    <script>document.body.classList.add('js');</script>--}}
 {{--    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>--}}

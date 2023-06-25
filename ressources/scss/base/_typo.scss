@@ -4,19 +4,28 @@
 /**** Typographie responsive ****/
 /** Polices de caractères **/
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-$fontePrincipale: 'Noto Sans', sans-serif;
-$fonteAction: 'Quicksand, sans-serif';
-
+@font-face {
+  font-family: 'Quantify';
+  src: url('../../fontes/quantify/Quantify.ttf') format('truetype');
+  /* Add additional src properties for different font file formats if available */
+}
+body h2{
+  font-family: 'Quantify', sans-serif;
+  color: white;
+}
 
 html {
   font-size: 62.5%;
 }
 
-h1,
+@media(max-width: 600px){
+  nav{
+    font-size: 20px;
+  }
+}
+/*h1,
 .h1 {
-  font-family: $fontePrincipale;
+  font-family: 'Font Name', sans-serif;
   font-size: 28px;
   font-weight: 700;
   margin: 0;
@@ -123,6 +132,6 @@ p {
     @media(min-width: 601px) {
       line-height: 1.5;
     }
-  }
-}
+  }*/
+//}
 

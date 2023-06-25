@@ -37,19 +37,19 @@
 /**** UTILITAIRES ****/
 
 /** Variables **/
-//@import 'utilitaires/variables';
+@import 'utilitaires/variables';
 
 /** Mixins **/
 //@import 'utilitaires/mixins';
 
 /****** BASE ******/
 
+@import 'base/general';
+@import 'base/nav';
+
 /** Typographie **/
 @import 'base/typo';
-/** variables **/
-@import 'utilitaires/variables';
-/** Mixins **/
-@import 'utilitaires/mixins';
+
 /****** MODULES ******/
 @import 'modules/accueil';
 
